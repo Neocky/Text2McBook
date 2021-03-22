@@ -14,7 +14,7 @@ Python needs to be installed on your machine.
 Get it [here](https://www.python.org/downloads/).  
 ### Clone the repository / Download the zip
 Download the script:
-Clone the repository or get the zip file [here](https://github.com/Neocky/Text2McBook/archive/refs/heads/main.zip).
+Clone the repository or get the latest release [here](https://github.com/Neocky/Text2McBook/releases).
 
 ## Usage
 Create/edit the textfile in the same folder where the python script is with the name: `text.txt`  
