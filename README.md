@@ -12,9 +12,13 @@ I got inspiration from a post from [r/admincraft](https://www.reddit.com/r/admin
 ### Python
 Python needs to be installed on your machine.  
 Get it [here](https://www.python.org/downloads/).  
+### Clone the repository / Download the zip
+Download the script:
+Clone the repository or get the zip file [here](https://github.com/Neocky/Text2McBook/archive/refs/heads/main.zip).
 
 ## Usage
-Create a textfile in the same folder where the python script is with the name: `text.txt`  
+Create/edit the textfile in the same folder where the python script is with the name: `text.txt`  
+Add your text that you want to convert in this file.  
 This is the text that you want to be converted to a minecraft book format so you can easily copy paste in a book ingame.  
 Run the script: `text2mcbook.py`  
 Now a `booktext.txt` file should be created.  
