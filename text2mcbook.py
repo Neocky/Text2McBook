@@ -2,7 +2,7 @@ import sys
 import textwrap
 
 try:
-    f = open("text.txt", "r")
+    f = open("text.txt", "r", encoding='utf-8')
 except FileNotFoundError:
     print("Error: File 'text.txt' wasn't found. Make sure it is in the same directory as this script and run again.")
     input("Press any key + Enter to end program...")
