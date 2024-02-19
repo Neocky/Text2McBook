@@ -1,34 +1,23 @@
+import sys
 import textwrap
 
-template = "{Count:1,id:\"minecraft:writable_book\",tag:{pages:TEMPLATE_LIST}}"
-template_give = "/give @p writable_book{pages:TEMPLATE_LIST} 1"
+try:
+    f = open("text.txt", encoding='utf-8') 
+except FileNotFoundError:
+    print("Error: File 'text.txt' wasn't found. Make sure it is in the same directory as this script and run again.")
+    input("Press any key + Enter to end program...")
+    sys.exit()
 
-def main():
-    try:
-        with open("text.txt", encoding='utf-8') as f:
-            text = f.read()
-    except FileNotFoundError:
-        with open("text.txt", "w", encoding='utf-8') as f:
-            print("Error: File 'text.txt' wasn't found. Creating a new one...")
+text = f.read()
+lines = textwrap.wrap(text, 19)
+i = 0
+fi = open("booktext.txt", "w", encoding='utf-8')
+fi.write("Made with Text2McBook  | By Neocky | https://github.com/Neocky/Text2McBook/")
 
-    lines = textwrap.wrap(text, 19)
-
-    pages = []
-    page = ""
-    for line in range(len(lines)):
-        lines_count = line % 14
-        if lines_count == 0 and page:
-            pages.append(page)
-            page = ""
-        page += lines[line] + " "
-    if page:  # Чтобы последнюю страницу тоже вписало.
-        pages.append(page)
-
-    with open("book_text_snbt.txt", "w", encoding="utf-8") as write_to_book:
-        write_to_book.write(template.replace("TEMPLATE_LIST", str(pages)))
-    with open("book_text_give.txt", "w", encoding="utf-8") as write_to_book:
-        write_to_book.write(template_give.replace("TEMPLATE_LIST", str(pages)))
-
-
-if __name__ == "__main__":
-    main()
+for line in range(len(lines)):
+    summ = line % 14
+    if summ == 0:
+        i += 1
+        fi.write("\n")
+        fi.write(f" ### Page: {i} ###\n")
+    fi.write(lines[line] + "\n")
