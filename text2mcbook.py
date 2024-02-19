@@ -1,7 +1,7 @@
 import textwrap
 
 template = "{Count:1,id:\"minecraft:writable_book\",tag:{pages:TEMPLATE_LIST}}"
-
+template_give = "/give @p writable_book{pages:TEMPLATE_LIST} 1"
 
 def main():
     try:
@@ -24,8 +24,10 @@ def main():
     if page:  # Чтобы последнюю страницу тоже вписало.
         pages.append(page)
 
-    with open("book_text.txt", "w", encoding="utf-8") as write_to_book:
+    with open("book_text_snbt.txt", "w", encoding="utf-8") as write_to_book:
         write_to_book.write(template.replace("TEMPLATE_LIST", str(pages)))
+    with open("book_text_give.txt", "w", encoding="utf-8") as write_to_book:
+        write_to_book.write(template_give.replace("TEMPLATE_LIST", str(pages)))
 
 
 if __name__ == "__main__":
