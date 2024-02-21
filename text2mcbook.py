@@ -2,7 +2,7 @@ import sys
 import textwrap
 
 try:
-    f = open("text.txt", "r", encoding='utf-8')
+    f = open("text.txt", encoding='utf-8') 
 except FileNotFoundError:
     print("Error: File 'text.txt' wasn't found. Make sure it is in the same directory as this script and run again.")
     input("Press any key + Enter to end program...")
@@ -11,7 +11,7 @@ except FileNotFoundError:
 text = f.read()
 lines = textwrap.wrap(text, 19)
 i = 0
-fi = open("booktext.txt", "w")
+fi = open("booktext.txt", "w", encoding='utf-8')
 fi.write("Made with Text2McBook  | By Neocky | https://github.com/Neocky/Text2McBook/")
 
 for line in range(len(lines)):
