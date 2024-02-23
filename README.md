@@ -8,7 +8,7 @@
   Text2McBook
 </h1>
 
-📚 Convert any textfile to a formatted text for minecraft books to use them as easily as possible ingame.
+📚 Convert any text file to a formatted text for minecraft books to use them as easily as possible ingame.
 
 ## Issues? Found a bug?
 
@@ -16,8 +16,8 @@
 
 ## About
 
-This script will convert text from a textfile to a formatted minecraft book file. The file contains a native `/give` command which can be used ingame to get a `writable_book` with the text as content.  
-It supports different book formats which can be choosen with the parameter [`-f FORMATNAME`](https://github.com/Neocky/Text2McBook#parmaters).  
+This script will convert text from a text file to a formatted minecraft book file. The file contains a native `/give` command which can be used ingame to get a `writable_book` with the text as content.  
+It supports different book formats which can be chosen with the parameter [`-f FORMATNAME`](https://github.com/Neocky/Text2McBook#parmaters).  
 I got inspiration from a post from [r/admincraft](https://www.reddit.com/r/admincraft/).
 
 ### Default
@@ -44,16 +44,16 @@ Clone the repository or get the latest release [here](https://github.com/Neocky/
 
 ## Usage
 
-Create/edit the textfile in the same folder where the python script is with the name: `text.txt` and add your book text in there.  
+Create/edit the text file in the same folder where the python script is with the name: `text.txt` and add your book text in there.  
 This is the text that you want to be converted to a minecraft book format.  
 Run the script: `text2mcbook.py`.  
 Now a `booktext.txt` file should be created.  
-In there is a `/give` command which can be inputted into a command block to get the book. There is also the formated text which you can easily copy & paste in a book in minecraft.
+In there is a `/give` command which can be inputted into a command block to get the book. There is also the formatted text which you can easily copy & paste in a book in minecraft.
 
 
 ## Advanced Usage
 
-### Parmaters
+### Parametrs
 
 This script supports the following parameters to change the usage for the script.
 
