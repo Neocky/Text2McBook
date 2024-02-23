@@ -1,5 +1,12 @@
+<p align="center">
+<picture>
+  <img src="https://github.com/Neocky/Text2McBook/assets/13088544/e138462c-8ecd-4a6f-ad68-aeb77764fee1" alt="Lorem ipsum preview book" height="300px">
+</picture>
+</p>
 
-# Text2McBook
+<h1 align="center">
+  Text2McBook
+</h1>
 
 📚 Convert any textfile to a formatted text for minecraft books to use them as easily as possible ingame.
 
@@ -10,7 +17,7 @@
 ## About
 
 This script will convert a text file and output a formatted file with the text in a way in which it can be easily used ingame like with the `/give` command.
-It supports different book formats which can be choosen with the parameter [`-f FORMATNAME`]().
+It supports different book formats which can be choosen with the parameter [`-f FORMATNAME`](https://github.com/Neocky/Text2McBook#parmaters).
 
 ### Default
 
