@@ -17,7 +17,8 @@
 ## About
 
 This script will convert a text file and output a formatted file with the text in a way in which it can be easily used ingame like with the `/give` command.
-It supports different book formats which can be choosen with the parameter [`-f FORMATNAME`](https://github.com/Neocky/Text2McBook#parmaters).
+It supports different book formats which can be choosen with the parameter [`-f FORMATNAME`](https://github.com/Neocky/Text2McBook#parmaters).  
+I got inspiration from a post from [r/admincraft](https://www.reddit.com/r/admincraft/).
 
 ### Default
 
@@ -27,10 +28,7 @@ It will also format the text in a way in which it can be easily copy and pasted 
 ### Denizen
 
 [Denizen](https://denizenscript.com/) is a scripting plugin for minecraft servers.  
-The `denizen` format will format the text for the `text` property in [Book Script Containers](https://meta.denizenscript.com/Docs/Search/book#book%20script%20containers). It will replace new line symbols with `<n>` and indents the line with 4 spaces to make it easily pasteable in the `text` properties of `book script containers`.
-
-
-I got inspiration from a post from [r/admincraft](https://www.reddit.com/r/admincraft/)  
+The `denizen` format will format the text for the `text` property in [Book Script Containers](https://meta.denizenscript.com/Docs/Search/book#book%20script%20containers). It will replace new line symbols with `<n>` and indents the line with 4 spaces to make it easily pasteable in the `text` properties of `book script containers`.  
 
 ## Installation
 
@@ -39,9 +37,9 @@ I got inspiration from a post from [r/admincraft](https://www.reddit.com/r/admin
 Python (minimum: Version 3.10.4) needs to be installed on your machine.  
 Get it [here](https://www.python.org/downloads/).
 
-### Clone the repository / Download the zip
+### Clone the repository / Download the latest release
 
-Download the script:
+Download the script:  
 Clone the repository or get the latest release [here](https://github.com/Neocky/Text2McBook/releases).
 
 ## Usage
