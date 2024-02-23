@@ -44,7 +44,7 @@ Clone the repository or get the latest release [here](https://github.com/Neocky/
 
 ## Usage
 
-Create/edit the text file in the same folder where the python script is with the name: `text.txt` and add your book text in there.  
+Create/edit the text file in the same folder where the python script is with the name `text.txt` and add your book text in there.  
 This is the text that you want to be converted to a minecraft book format.  
 Run the script: `text2mcbook.py`.  
 Now a `booktext.txt` file should be created.  
