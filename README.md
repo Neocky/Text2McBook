@@ -16,7 +16,7 @@
 
 ## About
 
-This script will convert text from a textfile to a formatted minecraft book file. The file contains a native `/give` command which can be easily used ingame to get the book with the text as content.  
+This script will convert text from a textfile to a formatted minecraft book file. The file contains a native `/give` command which can be used ingame to get the book with the text as content.  
 It supports different book formats which can be choosen with the parameter [`-f FORMATNAME`](https://github.com/Neocky/Text2McBook#parmaters).  
 I got inspiration from a post from [r/admincraft](https://www.reddit.com/r/admincraft/).
 
